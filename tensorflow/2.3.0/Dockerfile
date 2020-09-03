@@ -14,7 +14,8 @@ RUN pip install --no-cache-dir --upgrade pip && \
         pydot==1.4.1 \
         scikit-image==0.17.2 \
         scikit-learn==0.23.2 \
-        seaborn==0.10.1
+        seaborn==0.10.1 \
+	tqdm==4.48.2
 
 FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04 AS lib
 ARG LIBNVINFER=6.0.1-1
